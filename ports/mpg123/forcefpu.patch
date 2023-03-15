@@ -1,0 +1,17 @@
+diff --git a/ports/cmake/src/CMakeLists.txt b/ports/cmake/src/CMakeLists.txt
+index ee9a1ba3..606fd001 100644
+--- a/ports/cmake/src/CMakeLists.txt
++++ b/ports/cmake/src/CMakeLists.txt
+@@ -185,11 +185,7 @@ if(NO_MESSAGES)
+     set(NO_ERETURN ON)
+ endif()
+ 
+-if(WIN32)
+-    set(HAVE_FPU 1)
+-else()
+-    cmake_host_system_information(RESULT HAVE_FPU QUERY HAS_FPU)
+-endif()
++set(HAVE_FPU 1)
+ 
+ if(NOT HAVE_FPU)
+     set(NO_SYNTH32 ON)
