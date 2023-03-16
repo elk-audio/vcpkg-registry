@@ -2,7 +2,7 @@ vcpkg_from_sourceforge(
     OUT_SOURCE_PATH SOURCE_PATH
     REPO mpg123/mpg123
     REF "${VERSION}"
-    FILENAME "mpg123-${VERSION}.tar.bz2"
+    FILENAME "mpg123-1.31.2.tar.bz2"
     SHA512 eca285382ee3e780353834addf1336c4a2f8f11256af22f95e11efa243de669761c083c86ddfc6ac8c02a920a3c4ab4ad767efa2739fb052e9719f35ef407bc3
     PATCHES
         fix-modulejack.patch
